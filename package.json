@@ -1,7 +1,7 @@
 {
   "name": "ats",
   "version": "1.0.0",
-  "description": "classProject",
+  "description": "CSC603ClassProject",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
