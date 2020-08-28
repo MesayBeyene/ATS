@@ -102,6 +102,11 @@ brand-logo {
   color: #333333;
 }
 
+ul {
+  list-style-type: none;
+  margin-left: 5px;
+}
+
 @media screen and (min-width: 992px) {
   div#hamberger {
     display: none;
