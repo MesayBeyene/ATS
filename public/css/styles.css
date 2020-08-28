@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeeeee;
+}
+
+brand-logo {
+  color: #ffffff;
+}
+.navbar {
+  background-color: #eeeeee;
+  height: auto;
+}
+
+#stickyTop,
+#activeHamberger {
+  border-bottom: 5px solid #01579b;
+}
+
+#loginsubmit {
+  background-color: #01579b;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+.sliderCont {
+  clear: both;
+}
+.d-block {
+  height: 500px;
+}
+.navbar-brand,
+#navbarNavDropdown {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #eeeeee;
+}
+.navbar-brand a:hover {
+  color: #333333;
+}
+
+#hamberger {
+  background-color: #eeeeee;
+}
+
+#loginArea {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 100px;
+}
+
+/*
+    .mobile-container {
+      max-width: 992px;
+      margin: auto;
+      background-color: #555;
+      height: 230px;
+      color: white;
+      border-radius: 10px;
+    }
+    */
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffebee;
+  position: relative;
+}
+
+#active,
+#activeHamberger {
+  background-color: #eeeeee;
+  color: #ffffff;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#active {
+  margin-left: 100px;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: #333333;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #eeeeee;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  color: #333333;
+}
+
+@media screen and (min-width: 992px) {
+  div#hamberger {
+    display: none;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 992px) {
+  nav#stickyTop {
+    display: none;
+  }
+  div#myLinks {
+    display: none;
+  }
+}
