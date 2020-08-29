@@ -82,6 +82,16 @@ brand-logo {
   display: none;
 }
 
+/* .topnav a:hover,
+.navbar a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active,
+.navbar a:hover {
+  border-bottom: 3px solid red;
+} */
+
 .topnav a {
   color: #333333;
   padding: 14px 16px;
@@ -105,6 +115,10 @@ brand-logo {
 ul {
   list-style-type: none;
   margin-left: 5px;
+}
+
+.btn {
+  background-color: #01579b;
 }
 
 @media screen and (min-width: 992px) {

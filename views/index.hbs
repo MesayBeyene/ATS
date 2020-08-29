@@ -31,6 +31,9 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
+                        <a class="nav-link" href="/registerUser">UserRegister</a>
+                    </li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="/assignmentLog">AssignmentLog</a>
                     </li>
                     <li class="nav-item active">
@@ -54,6 +57,7 @@
         <div id="myLinks">
             <ul>
                 <li><a href="/">Home</a></li>
+                <li><a href="/registerUser">UserRegister</a></li>
                 <li><a href="/assignmentLog">AssignmentLog</a></li>
                 <li><a href="/developerLog">DeveloperLog</a></li>
                 <li><a href="/generalReport">GeneralReport</a></li>
@@ -69,7 +73,7 @@
         <div class="card">
             <div class="card-header">Login Form </div>
             <div class="card-body">
-                <form action="/auth/login" method="POST">
+                <form action="/auth/index" method="POST">
 
                     <div class="form-group">
                         <label for="email">Email Address</label>

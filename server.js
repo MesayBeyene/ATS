@@ -8,11 +8,16 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "./.env" });
 
 const app = express();
-const port = 8080;
+const port = 3000;
 
 //Creating public directory(where we can save public files)...__dirname gives the current directory
 const publicDirectory = path.join(__dirname, "./public");
 app.use(express.static(publicDirectory));
+
+//parse URL unicoded bodies(as sent by HTML forms)
+app.use(express.urlencoded({ extended: false }));
+//parse JSON bodies as sent by api clients
+app.use(express.json());
 
 //Creating environmental .env DB Connection
 const db = mysql.createConnection({
@@ -34,25 +39,9 @@ db.connect((error) => {
 //Connecting HTML pages
 app.set("view engine", "hbs");
 
-//Connecting index.hbs
-app.get("/", (req, res) => {
-  res.render("index");
-});
+//Define routes
+app.use("/", require("./routes/pages"));
+app.use("/auth", require("./routes/auth"));
 
-//Connecting assignmentLog.hbs
-app.get("/assignmentLog", (req, res) => {
-  res.render("assignmentLog");
-});
-
-//Connecting developerLog.hbs
-app.get("/developerLog", (req, res) => {
-  res.render("developerLog");
-});
-
-//Connecting generalReport.hbs
-app.get("/generalReport", (req, res) => {
-  res.render("generalReport");
-});
-
-//Listen on port 8080
-app.listen(port, () => console.log("Listening on port 8080"));
+//Listen on port 3000
+app.listen(port, () => console.log("Listening on port 3000"));
